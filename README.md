@@ -1,5 +1,5 @@
-# Real-time-clock-i2c-PCF8563-Interfacing-with-TM4C123GH6PM-Microcontroller
+# Real-time-clock-i2c-PCF8563-Interfacing-with-TM4C123GH6PM-Microcontroller (mainRTC.c)
 
-# clock with date and alarm setting (using SEVEN SEGMENT DISPLAY)
+# Clock with date and alarm setting (using SEVEN SEGMENT DISPLAY) see clock.c
 
 https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf

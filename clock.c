@@ -109,8 +109,6 @@ int year=0;
 
 while(1){
 
-
-
     switch(sel){
     case  0:
                 CountSwitch1=0;                                                  //reset switch press counter here
@@ -166,7 +164,6 @@ while(1){
 return 0;
 
   }
-
 
 void InitConsole(void)
 {
@@ -296,8 +293,6 @@ void InterruptInit()
     GPIOPinTypeGPIOOutput(GPIO_PORTD_BASE,GPIO_PIN_6);                                    //alarm buzzer
 
 
-
-
 /************ switch1 and switch2 ****************/
 
     HWREG(GPIO_PORTF_BASE|GPIO_O_LOCK)=GPIO_LOCK_KEY;                                    //Unlocking the user switch 2
@@ -349,7 +344,6 @@ void Display()
 
 }
 
-
 void Setting_Display()                                             //another display just to avoid to much interdependencies
 {
 
@@ -377,9 +371,7 @@ void Setting_Display()                                             //another dis
 
         }
 
-
 }
-
 
 void UARTDisplay()
 {
@@ -462,9 +454,6 @@ void TotalRead()
                    DataRx[index] = I2CMasterDataGet(I2C0_BASE);   // Read the data
                     index++;
                      }
-
-
-
       }
 }
 
@@ -476,8 +465,6 @@ void time_set()
 
     status = GPIOIntStatus(GPIO_PORTF_BASE,true);
     GPIOIntClear(GPIO_PORTF_BASE,status);
-
-
 
 
     if( (status & GPIO_INT_PIN_4) == GPIO_INT_PIN_4){
@@ -512,10 +499,6 @@ void time_set()
                     }
 
                 }
-
-
-
-
     }
 
     /************ incrementer pin ****************/
@@ -622,8 +605,6 @@ void alarm_set()
 
     status = GPIOIntStatus(GPIO_PORTB_BASE,true);
     GPIOIntClear(GPIO_PORTB_BASE,status);
-
-
 
 
     if( (status & GPIO_INT_PIN_4) == GPIO_INT_PIN_4){

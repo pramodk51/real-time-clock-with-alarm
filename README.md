@@ -1,7 +1,10 @@
-# Real-time-clock-i2c-PCF8563-Interfacing-with-TM4C123GH6PM-Microcontroller (mainRTC.c)
+# Clock with time and alarm setting. (see clock.c)
 
-# Clock with time and alarm setting (using SEVEN SEGMENT DISPLAY) see clock.c
+mainRTC.c - to read and print Date and Time.
 
 A clock using multiplexed seven-segment displays and I2C bus based RTC (pcf8563) interfaced with TM4C123 ARM microcontroller with alarm feature.
+Used 4 seven-segment dispalys. Push Buttons to update time and alarm setting. 
+
+See Doc2.pdf for raw working project image.
 
 https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf
